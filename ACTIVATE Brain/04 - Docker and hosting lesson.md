@@ -114,3 +114,11 @@ Before creating AWS resources, review current Amplify, Cognito, DynamoDB, data t
 - **Data seems missing:** Check the exact browser, hostname, port, and protocol; browser storage is origin-specific. Don't clear the original origin.
 
 Official Docker concepts: https://docs.docker.com/get-started/docker-overview/ .
+
+## Preparation already completed
+
+- ACTIVATE now has a local Git repository on the `main` branch and an initial commit. A commit is a saved snapshot of the tracked project files on this computer; it does not upload anything.
+- The Dockerfile copies the `public` assets into the final image and uses `npm ci` with `package-lock.json`.
+- The package manifest pins a patched PostCSS version via an npm override to resolve the advisories found during preparation. `npm audit --omit=dev` reported zero known vulnerabilities at the time of the check. An audit is a point-in-time check, not a guarantee of security.
+- Tests and a production build passed. Docker Engine and Docker Compose still need to be installed and tested on the host with your administrator password.
+- No remote repository or AWS deployment was created. Before publishing a repository, review all files—including this vault—for information you do not want to share.

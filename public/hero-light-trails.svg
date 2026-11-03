@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 400" preserveAspectRatio="none">
+ <defs>
+  <linearGradient id="ribbon" x1="0" y1="0" x2="0.15" y2="1"><stop stop-color="#d3f0ff" stop-opacity=".03"/><stop offset=".25" stop-color="#e0f5ff" stop-opacity=".32"/><stop offset=".48" stop-color="#a0d9ff" stop-opacity=".12"/><stop offset=".72" stop-color="#2864bc" stop-opacity=".20"/><stop offset="1" stop-color="#133f92" stop-opacity=".02"/></linearGradient>
+  <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#d9f4ff" stop-opacity="0"/><stop offset=".42" stop-color="#e9f8ff" stop-opacity=".6"/><stop offset="1" stop-color="#c4eaff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="deep" x1="0" y1="0" x2=".1" y2="1"><stop stop-color="#badfff" stop-opacity=".08"/><stop offset=".45" stop-color="#c9ecff" stop-opacity=".22"/><stop offset="1" stop-color="#113f91" stop-opacity=".20"/></linearGradient>
+ </defs>
+ <path d="M-130 390 C135 155 350 465 660 230 S1140 65 1510 130 L1510 212 C1150 105 950 85 690 285 S150 230 -130 470Z" fill="url(#ribbon)"/>
+ <path d="M-130 390 C135 155 350 465 660 230 S1140 65 1510 130" fill="none" stroke="url(#glow)" stroke-width="3"/>
+ <path d="M-130 470 C150 230 410 500 690 285 S1150 105 1510 212" fill="none" stroke="#123d88" stroke-opacity=".10" stroke-width="8"/>
+ <path d="M-180 160 C80 385 380 -5 710 150 S1150 395 1510 40 L1510 104 C1170 425 990 270 700 205 S100 430 -180 230Z" fill="url(#deep)"/>
+ <path d="M-180 160 C80 385 380 -5 710 150 S1150 395 1510 40" fill="none" stroke="url(#glow)" stroke-width="2" opacity=".65"/>
+ <path d="M-130 310 C150 65 380 400 700 175 S1170 85 1530 245" fill="none" stroke="url(#glow)" stroke-width="2" opacity=".55"/>
+</svg>

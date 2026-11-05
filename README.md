@@ -31,27 +31,6 @@ Data is stored in this browser's local storage. It is not synchronized between d
 ## Docker
 
 The image was built and its homepage and public assets were verified locally with Podman. Docker Compose has not been tested here. With Docker and Compose installed, run `docker compose up --build` and open http://localhost:3001. Stop with Ctrl+C, then `docker compose down`. The Compose port is bound to this computer only. The app's browser data is separate at each origin, so data from localhost:3000 won't automatically appear at localhost:3001. Motivation files are not included in the current backup.
-
-
-
-## Future AWS architecture
-
-The following is a proposal, not deployed or implemented:
-
-```mermaid
-flowchart LR
-  Browser -->|HTTPS| Amplify[AWS Amplify Hosting / Next.js]
-  Browser -->|Sign in| Cognito[Amazon Cognito]
-  Amplify -->|Verify identity and authorize| API[Server-side routes]
-  API -->|Least-privilege IAM| DynamoDB[(Amazon DynamoDB)]
-```
-
-Before deployment, implement and test Cognito authentication, server-side validation and per-user authorization, and DynamoDB persistence. Never trust a client-supplied user ID. Keep secrets server-side and use IAM roles with least privilege. Define a migration and backup strategy for local data. For an initial public demo, the current local-first app can be deployed to Amplify without those backend services; visitors’ data will remain in their own browsers. For accounts and cross-device sync, implement the backend first. The app was deployed to AWS Amplify as a learning exercise. It is now also deployed to Vercel; account-based synchronization remains future work.
-
-Amplify build and hosting, Cognito, DynamoDB, data transfer, logging, and any optional services can incur charges. Free allowances and account eligibility vary and change; check the current AWS pricing and free-tier pages before deploying. Set AWS Budgets alerts and review Cost Explorer and service usage. A budget alert does not cap spending. No cost estimate can be reliable without current pricing, account eligibility, and expected usage.
-
-The ACTIVATE logo is a custom vector wordmark with a blue lightning bolt beside the wordmark. Reusable light and dark variants are in `public/activate-logo.svg` and `public/activate-logo-dark.svg`.
-
 ## License
 
 ACTIVATE’s original project code is offered under the [PolyForm Noncommercial License 1.0.0](LICENSE). The license permits use, modification, and distribution for permitted non-commercial purposes, subject to its terms. Other uses require separate permission from the relevant rights holder. Third-party dependencies and assets remain subject to their own licenses.

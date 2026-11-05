@@ -51,3 +51,7 @@ Before deployment, implement and test Cognito authentication, server-side valida
 Amplify build and hosting, Cognito, DynamoDB, data transfer, logging, and any optional services can incur charges. Free allowances and account eligibility vary and change; check the current AWS pricing and free-tier pages before deploying. Set AWS Budgets alerts and review Cost Explorer and service usage. A budget alert does not cap spending. No cost estimate can be reliable without current pricing, account eligibility, and expected usage.
 
 The ACTIVATE logo is a custom vector wordmark with a blue lightning bolt beside the wordmark. Reusable light and dark variants are in `public/activate-logo.svg` and `public/activate-logo-dark.svg`.
+
+## License
+
+ACTIVATE’s original project code is offered under the [PolyForm Noncommercial License 1.0.0](LICENSE). The license permits use, modification, and distribution for permitted non-commercial purposes, subject to its terms. Other uses require separate permission from the relevant rights holder. Third-party dependencies and assets remain subject to their own licenses.

@@ -1,6 +1,10 @@
 # ACTIVATE
 
-A personal productivity workspace for tasks, habits, goals, and a visual history of getting things done. The blue lightning streak and bold ACTIVATE wordmark represent a small start that builds momentum.
+ACTIVATE is a personal productivity app for tasks, habits, goals, and motivation. I’m building it as a hands-on learning project to explore Next.js, Docker, and AWS deployment while creating a useful everyday tool.
+
+**Live demo:** [Open ACTIVATE](https://main.d190afzbyxaqc2.amplifyapp.com/)
+
+The current version is local-first: each browser stores its own data. Accounts, cross-device sync, and AWS-backed persistence are planned, not implemented.
 
 ## Run locally
 
@@ -42,9 +46,9 @@ flowchart LR
   API -->|Least-privilege IAM| DynamoDB[(Amazon DynamoDB)]
 ```
 
-Before deployment, implement and test Cognito authentication, server-side validation and per-user authorization, and DynamoDB persistence. Never trust a client-supplied user ID. Keep secrets server-side and use IAM roles with least privilege. Define a migration and backup strategy for local data. Then connect a repository to Amplify, configure its build and server environment, test in a separate environment, and use the default Amplify domain. No AWS resources have been provisioned.
+Before deployment, implement and test Cognito authentication, server-side validation and per-user authorization, and DynamoDB persistence. Never trust a client-supplied user ID. Keep secrets server-side and use IAM roles with least privilege. Define a migration and backup strategy for local data. For an initial public demo, the current local-first app can be deployed to Amplify without those backend services; visitors’ data will remain in their own browsers. For accounts and cross-device sync, implement the backend first. The public demo is hosted on AWS Amplify; account-based synchronization remains future work.
 
-Amplify build and hosting, Cognito, DynamoDB, data transfer, logging, and any optional services can incur charges. Free allowances and account eligibility vary and change; check the current AWS pricing and free-tier pages before deploying. Set AWS Budgets alerts and review Cost Explorer and service usage. A budget alert does not cap spending. Obtain approval before provisioning paid resources; no cost estimate can be reliable without current pricing, account eligibility, and expected usage.
+Amplify build and hosting, Cognito, DynamoDB, data transfer, logging, and any optional services can incur charges. Free allowances and account eligibility vary and change; check the current AWS pricing and free-tier pages before deploying. Set AWS Budgets alerts and review Cost Explorer and service usage. A budget alert does not cap spending. No cost estimate can be reliable without current pricing, account eligibility, and expected usage.
 
 ## Project knowledge
 

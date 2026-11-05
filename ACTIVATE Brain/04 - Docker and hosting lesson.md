@@ -18,7 +18,7 @@ An **image** is a packaged, read-only template. A **container** is a running ins
 Open a terminal in this folder:
 
 ```bash
-cd /home/prsib/projects/ACTIVATE
+cd ~/projects/ACTIVATE
 docker --version
 docker compose version
 ```

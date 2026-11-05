@@ -4,3 +4,10 @@ node_modules
 !.env.example
 
 .next-dev
+
+# Local agent instructions, credentials, and private project notes
+/AGENTS.md
+/.agents/
+/.codex/
+/.aws/
+/ACTIVATE Brain/

@@ -2,8 +2,6 @@
 
 ACTIVATE is a personal productivity app for tasks, habits, goals, and motivation. I’m building it as a hands-on learning project to explore Next.js, Docker, and AWS deployment while creating a useful everyday tool.
 
-**Live demo:** [Open ACTIVATE](https://activate-mu.vercel.app/)
-
 The current version is local-first: each browser stores its own data. Accounts, cross-device sync, and AWS-backed persistence are planned, not implemented.
 
 ## Run locally
